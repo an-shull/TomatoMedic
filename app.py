@@ -141,9 +141,9 @@ def predict_disease(image):
         return "Prediction failed", []
     return Counter(predictions).most_common(1)[0][0], predictions
 
-# -------------------------
+
 # UI Sections
-# -------------------------
+
 def upload_section():
     st.header("Upload or Capture Leaf Image")
     tab1, tab2 = st.tabs(["Upload", "Camera"])
